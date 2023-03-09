@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="p-7">
+      <main className="container p-10 mx-auto">
         <header>
           <p className="leading-tight">Abhishek Kalia</p>
           <p className="leading-tight opacity-60">Product Designer</p>
@@ -30,8 +30,81 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="work mt-10">
-          <p className="text uppercase text-sm font-bold">Select Work</p>
+        <div className="work mt-20">
+          <p className="text uppercase text-sm font-bold mb-10">
+            Selected Work
+          </p>
+          <div className="work-grid grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4">
+            <div className="">
+              <div className="image w-auto h-72 bg-slate-400 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+
+            <div className="entry">
+              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+
+            <div className="entry">
+              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+
+            <div className="entry">
+              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+
+            <div className="entry">
+              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+
+            <div className="entry">
+              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+
+            <div className="entry">
+              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="description">
+                <p className="leading-tight">Guided journaling for Headspace</p>
+                <p className="leading-tight opacity-60">
+                  Product Design / 2023
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>

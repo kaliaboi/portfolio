@@ -8,10 +8,6 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    fontFamily: {
-      sans: ["Avenir"],
-    },
-  },
+  theme: {},
   plugins: [],
 };
