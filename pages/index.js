@@ -34,9 +34,9 @@ export default function Home() {
           <p className="text uppercase text-sm font-bold mb-10">
             Selected Work
           </p>
-          <div className="work-grid grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4">
-            <div className="">
-              <div className="image w-auto h-72 bg-slate-400 basis-full"></div>
+          <div className="work-grid grid grid-cols-1 gap-10 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="entry">
+              <div className="image w-auto h-72 md:h-96 bg-slate-400 basis-full"></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
 
             <div className="entry">
-              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="image w-auto h-72 md:h-96 bg-slate-500 "></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             <div className="entry">
-              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="image w-auto h-72 md:h-96 bg-slate-500 basis-full"></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
             <div className="entry">
-              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="image w-auto h-72 md:h-96 bg-slate-500 basis-full"></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
 
             <div className="entry">
-              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="image w-auto h-72 md:h-96 bg-slate-500 basis-full"></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             <div className="entry">
-              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="image w-auto h-72 md:h-96 bg-slate-500 basis-full"></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
 
             <div className="entry">
-              <div className="image w-auto h-72 bg-slate-500 basis-full"></div>
+              <div className="image w-auto h-72 md:h-96 bg-slate-500 basis-full"></div>
               <div className="description">
                 <p className="leading-tight">Guided journaling for Headspace</p>
                 <p className="leading-tight opacity-60">
