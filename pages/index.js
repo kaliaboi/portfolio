@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container p-10 mx-auto">
+      <main className="container p-5 mx-auto">
         <header>
           <p className="leading-tight">Abhishek Kalia</p>
           <p className="leading-tight opacity-60">Product Designer</p>
