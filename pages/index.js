@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container p-5 mx-auto my-24 font-mono">
+      <main className="container p-5 mx-auto my-10">
         <header>
           <p className="leading-tight font-bold">Abhishek Kalia</p>
           <p className="leading-tight opacity-60">
@@ -33,6 +33,26 @@ export default function Home() {
             Selected Work
           </p>
           <div className="work-grid grid grid-cols-1 gap-10 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+            <Entry
+              name={"Guided journaling for Headspace"}
+              type="Product Design / 2023"
+              background="bg-slate-300"
+            />
+            <Entry
+              name={"Guided journaling for Headspace"}
+              type="Product Design / 2023"
+              background="bg-slate-300"
+            />
+            <Entry
+              name={"Guided journaling for Headspace"}
+              type="Product Design / 2023"
+              background="bg-slate-300"
+            />
+            <Entry
+              name={"Guided journaling for Headspace"}
+              type="Product Design / 2023"
+              background="bg-slate-300"
+            />
             <Entry
               name={"Guided journaling for Headspace"}
               type="Product Design / 2023"
