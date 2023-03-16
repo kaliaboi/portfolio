@@ -260,14 +260,14 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
+          <h1 className=" sm:text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl lg:text-xl">
             <span className="mr-2">📱</span> Designer of usable interfaces.
           </h1>
-          <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
+          <h1 className=" sm:text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl lg:text-xl">
             <span className="mr-2">💻</span> Developer of full stack
             applications.
           </h1>
-          <h1 className="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
+          <h1 className=" sm:text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl lg:text-xl">
             <span className="mr-2">🧱</span> Maintainer of scalable design
             systems.
           </h1>
