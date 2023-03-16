@@ -27,6 +27,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import Project from '@/components/Project'
 
 import amgen from '../images/Amgen.png'
+import sita from '../images/Sita.png'
 
 function MailIcon(props) {
   return (
@@ -318,6 +319,7 @@ export default function Home({ articles }) {
           <Project
             title="Guided journaling for Headspace"
             subtitle="Product Design / 2023"
+            image={sita}
           />
 
           <Project

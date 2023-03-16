@@ -5,7 +5,7 @@ export default function Project({ title, subtitle, image }) {
     <div className="project cursor-pointer transition-all hover:scale-[101%]">
       <Image
         src={image}
-        className="image mb-2 h-80 rounded-md bg-slate-300 object-cover"
+        className="image mb-2 h-80 rounded-md bg-slate-300 sm:object-cover lg:object-cover"
         unoptimized
       />
       <div className="title text-sm font-medium text-zinc-900 dark:text-zinc-100">
