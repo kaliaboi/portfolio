@@ -26,6 +26,8 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import Project from '@/components/Project'
 
+import amgen from '../images/Amgen.png'
+
 function MailIcon(props) {
   return (
     <svg
@@ -272,10 +274,10 @@ export default function Home({ articles }) {
             systems.
           </h1>
           <p className="mt-6 font-semibold text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Abhishek, a product designer and full stack developer based in
+            New York City. I’m obsessed with the power of scalable design
+            systems and passionate about deploying them to optimize health
+            products
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -310,6 +312,7 @@ export default function Home({ articles }) {
           <Project
             title="Guided journaling for Headspace"
             subtitle="Product Design / 2023"
+            image={amgen}
           />
 
           <Project
