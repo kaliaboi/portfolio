@@ -24,6 +24,7 @@ import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+import Project from '@/components/Project'
 
 function MailIcon(props) {
   return (
@@ -175,7 +176,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Resume</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -301,16 +302,43 @@ export default function Home({ articles }) {
         </div>
       </Container>
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
-          </div>
+        <h2 className="mb-6 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          <BriefcaseIcon className="h-6 w-6 flex-none" />
+          <span className="ml-3">Selected Projects</span>
+        </h2>
+        <div className="projects mb-10 grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          <Project
+            title="Guided journaling for Headspace"
+            subtitle="Product Design / 2023"
+          />
+
+          <Project
+            title="Guided journaling for Headspace"
+            subtitle="Product Design / 2023"
+          />
+
+          <Project
+            title="Guided journaling for Headspace"
+            subtitle="Product Design / 2023"
+          />
+
+          <Project
+            title="Guided journaling for Headspace"
+            subtitle="Product Design / 2023"
+          />
+
+          <Project
+            title="Guided journaling for Headspace"
+            subtitle="Product Design / 2023"
+          />
+
+          <Project
+            title="Guided journaling for Headspace"
+            subtitle="Product Design / 2023"
+          />
+        </div>
+        <div className="space-y-10">
+          <Resume />
         </div>
       </Container>
     </>

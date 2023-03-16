@@ -403,11 +403,9 @@ export function Header() {
           >
             <div className="relative flex gap-4">
               <div className="flex flex-1">
-                {!isHomePage && (
-                  <AvatarContainer>
-                    <Avatar />
-                  </AvatarContainer>
-                )}
+                <p className="align-middle text-sm font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+                  Abhishek Kalia
+                </p>
               </div>
               {/* <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />
