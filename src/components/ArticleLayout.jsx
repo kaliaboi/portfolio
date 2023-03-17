@@ -35,6 +35,7 @@ export function ArticleLayout({
       <Head>
         <title>{`${meta.title} - Spencer Sharp`}</title>
         <meta name="description" content={meta.description} />
+        <link rel="stylesheet" href="https://use.typekit.net/lmh3wgt.css" />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
