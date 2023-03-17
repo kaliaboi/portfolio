@@ -28,6 +28,7 @@ import Project from '@/components/Project'
 
 import amgen from '../images/Amgen.png'
 import sita from '../images/Sita.png'
+import headspace from '../images/Headspace.png'
 
 function MailIcon(props) {
   return (
@@ -313,18 +314,17 @@ export default function Home({ articles }) {
           <Project
             title="Guided journaling for Headspace"
             subtitle="Product Design / 2023"
-            image={amgen}
+            image={headspace}
           />
-
           <Project
             title="Guided journaling for Headspace"
             subtitle="Product Design / 2023"
             image={sita}
           />
-
           <Project
             title="Guided journaling for Headspace"
             subtitle="Product Design / 2023"
+            image={amgen}
           />
 
           <Project
