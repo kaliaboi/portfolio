@@ -314,29 +314,36 @@ export default function Home({ articles }) {
         </h2>
         <div className="projects mb-10 grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
           <Project
+            title="Making managing Osteoporosis easier"
+            subtitle="Product Design / 2023"
+            image={amgen}
+            link="https://drive.google.com/file/d/1LDDFl2HewMJ_LOFcjd1yyRAviRCIRQYY/view?usp=sharing"
+          />
+          <Project
+            title="Crafting a design system for India's largest travel company"
+            subtitle="Product Design / 2023"
+            image={sita}
+            link="https://drive.google.com/file/d/1-HMl-Op7KvcTuVq8JXVMhpamQBtIfLDT/view"
+          />
+
+          <Project
+            title="Making e-learning accessible for Indian schools"
+            subtitle="Product Design / 2023"
+            image={topschool}
+            link="https://drive.google.com/file/d/1RWa3Rf9d0OrIAStMvk4jgka0_9oi7Gy6/view?usp=sharing"
+          />
+          <Project
+            title="A metaverse powered event management app"
+            subtitle="Product Design / 2023"
+            image={virbook}
+            link="https://drive.google.com/file/d/1qok48saVMmJsAoZhQFV0zj--LoHH9Qk2/view"
+          />
+          <Project
             title="Guided journaling for Headspace"
             subtitle="Product Design / 2023"
             image={headspace}
-          />
-          <Project
-            title="Guided journaling for Headspace"
-            subtitle="Product Design / 2023"
-            image={sita}
-          />
-          <Project
-            title="Guided journaling for Headspace"
-            subtitle="Product Design / 2023"
-            image={amgen}
-          />
-          <Project
-            title="Guided journaling for Headspace"
-            subtitle="Product Design / 2023"
-            image={virbook}
-          />
-          <Project
-            title="Guided journaling for Headspace"
-            subtitle="Product Design / 2023"
-            image={topschool}
+            link="/articles/guided-journaling-for-headspace"
+            comingSoon
           />
         </div>
         <div className="space-y-10">
