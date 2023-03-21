@@ -31,6 +31,10 @@ import sita from '../images/Sita.png'
 import headspace from '../images/Headspace.png'
 import topschool from '../images/TopSchool.png'
 import virbook from '../images/Virbook.png'
+import grappus from '../images/grappus.png'
+import mnr from '../images/mnr.jpeg'
+import ae from '../images/ae.png'
+import mycaptain from '../images/mycaptain.png'
 
 function MailIcon(props) {
   return (
@@ -146,35 +150,32 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+      company: 'Grappus',
+      title: 'Product Designer',
+      logo: grappus,
+      start: '2020',
+      end: '2022',
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'McKinley & Rice',
+      title: 'Frontend Engineer',
+      logo: mnr,
+      start: '2019',
+      end: '2020',
+    },
+    {
+      company: 'AdEase',
+      title: 'Co-Founder',
+      logo: ae,
+      start: '2017',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'MyCaptain',
+      title: 'Web Developer',
+      logo: mycaptain,
+      start: '2016',
+      end: '2017',
     },
   ]
 
@@ -188,7 +189,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              <Image src={role.logo} alt="" className="" unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -218,7 +219,11 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="https://drive.google.com/file/d/1HskJFP05q6b553pMhDkpH0911LgWBTmV/view?usp=sharing"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -283,7 +288,7 @@ export default function Home({ articles }) {
             systems and passionate about deploying them to optimize health
             products
           </p>
-          <div className="mt-6 flex gap-6">
+          {/* <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
@@ -304,7 +309,7 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-          </div>
+          </div> */}
         </div>
       </Container>
       <Container className="mt-24 md:mt-28">
