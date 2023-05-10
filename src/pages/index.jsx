@@ -36,6 +36,7 @@ import grappus from '../images/grappus.png'
 import mnr from '../images/mnr.jpeg'
 import ae from '../images/ae.png'
 import mycaptain from '../images/mycaptain.png'
+import { Briefcase, List } from 'react-feather'
 
 function MailIcon(props) {
   return (
@@ -183,7 +184,7 @@ function Resume() {
   return (
     <div className="rounded-2xl border border-zinc-300 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
+        <List className="h-6 w-6 flex-none" />
         <span className="ml-3">Resume</span>
       </h2>
       <ol className="mt-6 space-y-4">
@@ -361,7 +362,7 @@ export default function Home({ articles }) {
       <Transition delay={4.6}>
         <Container className="mt-12 md:mt-16">
           <h2 className="mb-6 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-            <BriefcaseIcon className="h-6 w-6 flex-none" />
+            <Briefcase className="h-6 w-6 flex-none" />
             <span className="ml-3">Selected Projects</span>
           </h2>
           <div className="projects mb-10 grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
