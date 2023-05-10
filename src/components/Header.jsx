@@ -355,7 +355,7 @@ export function Header() {
   return (
     <Transition delay={0.5}>
       <header
-        className="pointer-events-none relative z-50 flex flex-col"
+        className="pointer-events-none relative z-50 flex flex-col bg-slate-50 dark:bg-zinc-900"
         style={{
           height: 'var(--header-height)',
           marginBottom: 'var(--header-mb)',

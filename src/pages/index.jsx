@@ -270,9 +270,9 @@ export default function Home({ articles }) {
         />
         <link rel="stylesheet" href="https://use.typekit.net/lmh3wgt.css" />
       </Head>
-      <Container className="mt-9 font-bold">
+      <Container className="mt-9">
         <div className="max-w-2xl font-medium text-zinc-900 dark:text-zinc-100">
-          <div className="mt-8">
+          <div className="mt-8 font-bold">
             <Transition delay={1}>
               <p className="my-3 text-lg">
                 A{' '}
