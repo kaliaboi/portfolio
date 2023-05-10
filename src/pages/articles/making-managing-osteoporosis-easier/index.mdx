@@ -1,27 +1,164 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
 import designSystem from './planetaria-design-system.png'
+import cover from './Cover.png'
+import objective from './Objective.png'
+import flow from './Flow.png'
+import mf1 from './mf1.png'
+import mf2 from './mf2.png'
+import mf3 from './mf3.png'
+import umf from './umf.png'
+import rp from './rp.png'
+import uf from './uf.png'
+import ob from './ob.png'
+import sch from './sch.png'
+import final from './final.png'
+import stats from './stats.png'
+import { Button } from '@/components/Button'
 
 export const meta = {
-  author: 'Adam Wathan',
+  author: 'Abhishek Kalia',
   date: '2022-09-05',
-  title: 'Crafting a design system for a multiplanetary future',
+  title: 'Making managing Osteoporosis easier',
   description:
     'Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.',
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
+**Role:** UX Research, UI Design, Prototyping
 
-<Image src={designSystem} alt="" />
+**Team:** [Grappus](https://grappus.com)
 
-I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
+**Duration:** January - March, 2023
 
-## Sermone fata
+<Image src={cover} alt="" />
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
+## About Osteoporosis
+
+Osteoporosis is a common bone disease that occurs when the body loses too much bone, makes too little bone,
+or both. This leads to weak and brittle bones that are more likely to fracture or break. Osteoporosis affects
+both men and women, but it is more common in women, particularly those who are postmenopausal.
+
+Here are some relevant statistics about osteoporosis:
+
+- According to the International Osteoporosis Foundation, worldwide, one in three women over the age of 50 will experience osteoporotic fractures, as will one in five men over the age of 50.
+
+- In the United States, approximately 10 million people have osteoporosis, and another 44 million have low bone density, which puts them at risk of developing the disease.
+
+- In the US, it is estimated that osteoporosis is responsible for more than 2 million fractures each year, and the estimated cost of osteoporosis-related fractures is $19 billion annually.
+
+## The Client
+
+Amgen is a multinational biopharmaceutical company that specializes in the development
+and production of drugs for the treatment of various illnesses, including osteoporosis.
+Osteoporosis is a bone disease that affects millions of people worldwide and is characterized
+by the loss of bone density, which leads to an increased risk of fractures. Amgen recently approached
+us to design a mobile application that would help patients manage their osteoporosis and provide information
+about their drug Evenity. In this case study, we will discuss the UX design process that we undertook to
+design an effective and user-friendly osteoporosis management app.
+
+## Objective & Key features
+
+<Image src={objective} alt="" />
+
+## Research
+
+Our first step was to conduct research to understand the needs of osteoporosis patients and how they currently
+manage their condition. We conducted user interviews with osteoporosis patients and reviewed existing apps that
+were designed to manage the disease. We found that existing apps lacked a user-friendly interface and did not provide
+enough information about the disease and its treatment. We also discovered that patients had difficulty remembering
+when to take their medication and keeping track of their appointments with their healthcare provider.
+
+<Image src={rp} alt="" />
+
+### Interviews
+
+Our qualitative research was mainly guided interviews with a pool of 23 patients and 4 doctors from Singapore,
+Vietnam and Philippines, provided to us by the team at Amgen. Here are some of the questions we asked the patients
+and caretakers:
+
+### Actionable insights
+
+1. Patients feel helpless after diagnosis
+2. Patients struggle managing appointments
+3. Patients find adherence really hard
+4. Doctors find it difficult to manage conversations
+5. Not every symptom needs an appointment
+
+### The condition lifecycle and pain points
+
+After talking to patients, we understood how their lives progress after getting diagnosed:
+
+<Image src={flow} alt="" />
+
+## Mid-fi testing
+
+Since this was a shorter project we had to jump directly to mid fidelity testing, here are some tests we ran.
+
+### Onboarding
+
+We wanted to test a converstational interface for onboarding as most of our patients were older and heavy users of messaging apps.
+
+<Image src={mf1} alt="" />
+
+### Scheduling
+
+Here, we wanted to test a more complex UI by introducting a calendar interface but testing showed that this didn't work really well. So we reverted to a list.
+
+<Image src={mf2} alt="" />
+
+### Home
+
+Since the home screen would be the most important in terms of retention we got a lot of good feedback that we could act on.
+
+<Image src={mf3} alt="" />
+
+### Iterating...
+
+<Image src={umf} alt="" />
+
+## Updated flow
+
+<Image src={uf} alt="" />
+
+## Final product
+
+<Image src={final} alt="" />
+
+### Easy onboarding
+
+<Image src={ob} alt="" />
+
+### Appointment management
+
+<Image src={sch} alt="" />
+
+### Home
+
+<iframe
+  width="100%"
+  height="1200"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuY74X30mr6O6Zcg7vCiZnM%2FAmgen%3Fpage-id%3D69%253A10822%26type%3Ddesign%26node-id%3D142-4867%26viewport%3D2237%252C-2173%252C0.48%26scaling%3Dscale-down%26starting-point-node-id%3D83%253A25991"
+  allowfullscreen
+></iframe>
+
+### The impact
+
+<Image src={stats} alt="" />
+
+## Key learnings
+
+**Iterative research:** This was the first project I was able to conduct a full research sprint, and it paid off!
+
+**Remote collaboration:** We were collaborating with stakeholders from different countries / cultures
+
+**Prototyping full experiences:** Since we didn’t have time for a proper handoff, this was crucial!
+
+<Button
+  href="https://drive.google.com/file/d/1LDDFl2HewMJ_LOFcjd1yyRAviRCIRQYY/view?usp=share_link"
+  variant="secondary"
+  className="group mt-6 h-12 w-full no-underline"
+>
+  Download PDF
+</Button>

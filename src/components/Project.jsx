@@ -7,10 +7,10 @@ export default function Project({ title, subtitle, image, link, comingSoon }) {
       <div className="project cursor-pointer transition-all hover:scale-[105%]">
         <Image
           src={image}
-          className="image mb-2 h-80 rounded-md bg-slate-300 object-cover"
+          className="image mb-2 h-80 bg-slate-300 object-cover"
           unoptimized
         />
-        <div className="title text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        <div className="title text-md font-medium text-zinc-900 dark:text-zinc-100">
           {title}{' '}
           <span>
             {comingSoon ? (
@@ -22,7 +22,7 @@ export default function Project({ title, subtitle, image, link, comingSoon }) {
             )}
           </span>
         </div>
-        <div className="subtitle text-xs text-zinc-500 dark:text-zinc-400">
+        <div className="subtitle text-sm text-zinc-500 dark:text-zinc-400">
           {subtitle}
         </div>
       </div>

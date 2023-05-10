@@ -404,7 +404,7 @@ export function Header() {
           >
             <div className="relative flex gap-4">
               <div className="flex flex-1 items-center">
-                <p className="text-sm font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+                <p className="text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
                   Abhishek Kalia
                 </p>
               </div>

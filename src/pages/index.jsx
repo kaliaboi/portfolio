@@ -181,7 +181,7 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="rounded-2xl border border-zinc-300 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Resume</span>
@@ -268,11 +268,10 @@ export default function Home({ articles }) {
           name="description"
           content="I'm Abhishek, a product designer and full stack developer from New York!"
         />
-        <link rel="stylesheet" href="https://use.typekit.net/lmh3wgt.css" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl font-medium text-zinc-900 dark:text-zinc-100">
-          <div className="mt-8 font-bold">
+          <div className="mt-8">
             <Transition delay={1}>
               <p className="my-3 text-lg">
                 A{' '}
@@ -304,9 +303,9 @@ export default function Home({ articles }) {
                 <p className="mt-3 text-lg">who...</p>
               </Transition>
               <Transition delay={4.2}>
-                <div className="ml-2 w-72 rounded-md bg-[#dfe3ef] py-2  px-3 dark:bg-[#27292E]">
+                <div className="ml-2 w-72 rounded-md bg-[#e6e9ef] py-2  px-3 dark:bg-[#27292E]">
                   <Marquee
-                    className=" rounded-md text-lg text-zinc-900 dark:text-zinc-100"
+                    className=" text-md rounded-md text-zinc-900 dark:text-zinc-100"
                     pauseOnHover
                   >
                     &nbsp; Designs usable interfaces – Builds interactive
@@ -369,16 +368,16 @@ export default function Home({ articles }) {
             <Transition delay={4.8}>
               <Project
                 title="Making managing Osteoporosis easier"
-                subtitle="Product Design / 2023"
+                subtitle="Product Design / 2022"
                 image={amgen}
-                link="https://drive.google.com/file/d/1LDDFl2HewMJ_LOFcjd1yyRAviRCIRQYY/view?usp=sharing"
+                link="/articles/making-managing-osteoporosis-easier"
               />
             </Transition>
 
             <Transition delay={5}>
               <Project
                 title="Crafting a design system for India's largest travel company"
-                subtitle="Product Design / 2023"
+                subtitle="Product Design / 2022"
                 image={sita}
                 link="https://drive.google.com/file/d/1-HMl-Op7KvcTuVq8JXVMhpamQBtIfLDT/view"
               />
@@ -386,7 +385,7 @@ export default function Home({ articles }) {
             <Transition delay={5.2}>
               <Project
                 title="Making e-learning accessible for Indian schools"
-                subtitle="Product Design / 2023"
+                subtitle="Product Design / 2022"
                 image={topschool}
                 link="https://drive.google.com/file/d/1RWa3Rf9d0OrIAStMvk4jgka0_9oi7Gy6/view?usp=sharing"
               />
@@ -395,7 +394,7 @@ export default function Home({ articles }) {
             <Transition delay={5.4}>
               <Project
                 title="A metaverse powered event management app"
-                subtitle="Product Design / 2023"
+                subtitle="Product Design / 2021"
                 image={virbook}
                 link="https://drive.google.com/file/d/1qok48saVMmJsAoZhQFV0zj--LoHH9Qk2/view"
               />
