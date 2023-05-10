@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
-
+import Transition from '../components/utils/Transition'
+import Marquee from 'react-fast-marquee'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
@@ -269,9 +270,55 @@ export default function Home({ articles }) {
         />
         <link rel="stylesheet" href="https://use.typekit.net/lmh3wgt.css" />
       </Head>
-      <Container className="mt-9">
-        <div className="max-w-2xl">
-          <h1 className=" sm:text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl lg:text-xl">
+      <Container className="mt-9 font-bold">
+        <div className="max-w-2xl font-medium text-zinc-900 dark:text-zinc-100">
+          <div className="mt-8">
+            <Transition delay={1}>
+              <p className="my-3 text-lg">
+                A{' '}
+                <span className="mx-1 rounded-md border-2 border-zinc-900 p-1  dark:border-zinc-100">
+                  {' '}
+                  product designer
+                </span>{' '}
+              </p>
+            </Transition>
+            <Transition delay={1.8}>
+              <p className="my-3 text-lg">
+                and
+                <span className="mx-1 rounded-md border-2 border-zinc-900 p-1  dark:border-zinc-100">
+                  frontend developer
+                </span>{' '}
+              </p>
+            </Transition>
+            <Transition delay={2.6}>
+              <p className="my-3 text-lg">
+                based in{' '}
+                <span className="mx-1 rounded-md border-2 border-zinc-900 p-1  dark:border-zinc-100">
+                  New York City
+                </span>{' '}
+              </p>
+            </Transition>
+
+            <div className="flex">
+              <Transition delay={3.4}>
+                <p className="mt-3 text-lg">who...</p>
+              </Transition>
+              <Transition delay={4.2}>
+                <div className="ml-2 w-72 rounded-md bg-[#dfe3ef] py-2  px-3 dark:bg-[#27292E]">
+                  <Marquee
+                    className=" rounded-md text-lg text-zinc-900 dark:text-zinc-100"
+                    pauseOnHover
+                  >
+                    &nbsp; Designs usable interfaces – Builds interactive
+                    applications – Maintains scalabale design systems – Builds
+                    Figma plugins – Teaches code to design students – Helps
+                    puppies find homes – Is just trying to do his best –
+                  </Marquee>
+                </div>
+              </Transition>
+            </div>
+          </div>
+          {/* <h1 className=" sm:text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl lg:text-xl">
             <span className="mr-2">📱</span> Designer of usable interfaces.
           </h1>
           <h1 className=" sm:text-md font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl lg:text-xl">
@@ -287,7 +334,7 @@ export default function Home({ articles }) {
             New York City. I’m obsessed with the power of scalable design
             systems and passionate about deploying them to optimize health
             products
-          </p>
+          </p> */}
           {/* <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com"
@@ -312,49 +359,63 @@ export default function Home({ articles }) {
           </div> */}
         </div>
       </Container>
-      <Container className="mt-24 md:mt-28">
-        <h2 className="mb-6 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-          <BriefcaseIcon className="h-6 w-6 flex-none" />
-          <span className="ml-3">Selected Projects</span>
-        </h2>
-        <div className="projects mb-10 grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-          <Project
-            title="Making managing Osteoporosis easier"
-            subtitle="Product Design / 2023"
-            image={amgen}
-            link="https://drive.google.com/file/d/1LDDFl2HewMJ_LOFcjd1yyRAviRCIRQYY/view?usp=sharing"
-          />
-          <Project
-            title="Crafting a design system for India's largest travel company"
-            subtitle="Product Design / 2023"
-            image={sita}
-            link="https://drive.google.com/file/d/1-HMl-Op7KvcTuVq8JXVMhpamQBtIfLDT/view"
-          />
+      <Transition delay={4.6}>
+        <Container className="mt-12 md:mt-16">
+          <h2 className="mb-6 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+            <BriefcaseIcon className="h-6 w-6 flex-none" />
+            <span className="ml-3">Selected Projects</span>
+          </h2>
+          <div className="projects mb-10 grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+            <Transition delay={4.8}>
+              <Project
+                title="Making managing Osteoporosis easier"
+                subtitle="Product Design / 2023"
+                image={amgen}
+                link="https://drive.google.com/file/d/1LDDFl2HewMJ_LOFcjd1yyRAviRCIRQYY/view?usp=sharing"
+              />
+            </Transition>
 
-          <Project
-            title="Making e-learning accessible for Indian schools"
-            subtitle="Product Design / 2023"
-            image={topschool}
-            link="https://drive.google.com/file/d/1RWa3Rf9d0OrIAStMvk4jgka0_9oi7Gy6/view?usp=sharing"
-          />
-          <Project
-            title="A metaverse powered event management app"
-            subtitle="Product Design / 2023"
-            image={virbook}
-            link="https://drive.google.com/file/d/1qok48saVMmJsAoZhQFV0zj--LoHH9Qk2/view"
-          />
-          <Project
-            title="Guided journaling for Headspace"
-            subtitle="Product Design / 2023"
-            image={headspace}
-            link="/articles/guided-journaling-for-headspace"
-            comingSoon
-          />
-        </div>
-        <div className="space-y-10">
-          <Resume />
-        </div>
-      </Container>
+            <Transition delay={5}>
+              <Project
+                title="Crafting a design system for India's largest travel company"
+                subtitle="Product Design / 2023"
+                image={sita}
+                link="https://drive.google.com/file/d/1-HMl-Op7KvcTuVq8JXVMhpamQBtIfLDT/view"
+              />
+            </Transition>
+            <Transition delay={5.2}>
+              <Project
+                title="Making e-learning accessible for Indian schools"
+                subtitle="Product Design / 2023"
+                image={topschool}
+                link="https://drive.google.com/file/d/1RWa3Rf9d0OrIAStMvk4jgka0_9oi7Gy6/view?usp=sharing"
+              />
+            </Transition>
+
+            <Transition delay={5.4}>
+              <Project
+                title="A metaverse powered event management app"
+                subtitle="Product Design / 2023"
+                image={virbook}
+                link="https://drive.google.com/file/d/1qok48saVMmJsAoZhQFV0zj--LoHH9Qk2/view"
+              />
+            </Transition>
+
+            <Transition delay={5.6}>
+              <Project
+                title="Guided journaling for Headspace"
+                subtitle="Product Design / 2023"
+                image={headspace}
+                link="/articles/guided-journaling-for-headspace"
+                comingSoon
+              />
+            </Transition>
+          </div>
+          <div className="space-y-10">
+            <Resume />
+          </div>
+        </Container>
+      </Transition>
     </>
   )
 }

@@ -5,7 +5,7 @@ module.exports = {
   plugins: [require('@tailwindcss/typography')],
   theme: {
     fontFamily: {
-      sans: ['area-normal'],
+      sans: ['lores-12'],
     },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],

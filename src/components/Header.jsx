@@ -2,7 +2,8 @@ import { Fragment, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Popover, Transition } from '@headlessui/react'
+import { Popover } from '@headlessui/react'
+import Transition from '../components/utils/Transition'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
@@ -352,7 +353,7 @@ export function Header() {
   }, [isHomePage])
 
   return (
-    <>
+    <Transition delay={0.5}>
       <header
         className="pointer-events-none relative z-50 flex flex-col"
         style={{
@@ -421,6 +422,6 @@ export function Header() {
         </div>
       </header>
       {isHomePage && <div style={{ height: 'var(--content-offset)' }} />}
-    </>
+    </Transition>
   )
 }
