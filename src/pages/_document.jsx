@@ -50,7 +50,6 @@ export default function Document() {
           type="application/feed+json"
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
-        <link rel="stylesheet" href="https://use.typekit.net/nkf5oqe.css" />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-neutral-900">
         <Main />

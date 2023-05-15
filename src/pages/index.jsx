@@ -306,7 +306,7 @@ export default function Home({ articles }) {
               <Transition delay={4.2}>
                 <div className="ml-2 w-72 rounded-md bg-[#e6e9ef] py-2  px-3 dark:bg-[#27292E]">
                   <Marquee
-                    className=" text-md rounded-md text-zinc-900 dark:text-zinc-100"
+                    className=" rounded-md text-lg text-zinc-900 dark:text-zinc-100"
                     pauseOnHover
                   >
                     &nbsp; Designs usable interfaces – Builds interactive
